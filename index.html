@@ -136,8 +136,9 @@
 
   .links {
     display: flex;
-    justify-content: center;
-    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
     opacity: 0;
     animation: fadeIn 0.8s ease 0.9s forwards;
   }
@@ -145,7 +146,9 @@
   .link-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
+    width: 200px;
     padding: 10px 20px;
     border-radius: 999px;
     border: 1px solid var(--border);
@@ -237,6 +240,12 @@
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
         </svg>
         X (Twitter)
+      </a>
+      <a class="link-btn" href="blog/index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+        </svg>
+        ブログ
       </a>
     </div>
   </div>
